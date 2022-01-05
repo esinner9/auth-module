@@ -35,7 +35,7 @@
     "release": "yarn build && standard-version && git push --follow-tags && npm publish",
     "start": "nuxt start demo",
     "test": "yarn lint && jest",
-    "prepare": "cd ./node_modules/@nuxtjs/auth-next && npm install && npm run build"
+    "postinstall": "cd ./node_modules/@nuxtjs/auth-next && npm install && npm run build"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
